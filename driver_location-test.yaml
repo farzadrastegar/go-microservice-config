@@ -5,7 +5,7 @@ urls:
     nsq:
       nsqLookupdAddress: "localhost:4161"
       nsqdAddress: "localhost:4150"
-      topic: "locations3"
+      topic: "locations"
       maxInFlight: 25
       channel: "store_location"
       handlerConcurrency: 4
