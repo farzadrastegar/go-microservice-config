@@ -17,5 +17,5 @@ database:
   port: "6379"
   passwrod: ""
   db: 0
-amqpServerUrl: "amqp://guest:guest@rabbitmq:5672/"
+amqpServerUrl: "amqp://guest:guest@localhost:5672/"
 configEventBus: "springCloudBus"
