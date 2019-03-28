@@ -1,0 +1,43 @@
+urls:
+  driverLocations:
+    path: "/drivers/:id/locations"
+    method: "PATCH"
+    nsq:
+      nsqLookupdAddress: ":4161"
+      nsqdAddress: ":4150"
+      topic: "locations"
+      maxInFlight: 25
+      channel: "store_location"
+      handlerConcurrency: 4
+  zombieDriver:
+    path: "/drivers/:id"
+    method: "GET"
+    http:
+      host: "zombie_driver"
+  zombieStatus:
+    method: "GET"
+    path: "/drivers/:id"
+    definition:
+      distance: 2000.0 #meters
+      duration: 0.3334 #minutes
+servers:
+  internal:
+    address: ""
+    port: "8082"
+  external:
+    address: ""
+    port: "8081"
+  zombie_driver:
+    address: ""
+    port: "8082"
+  driver_location:
+    address: ""
+    port: "8083"
+server:
+  address: ""
+  port: "8083"
+database:
+  address: ""
+  port: "6379"
+  passwrod: ""
+  db: 0
