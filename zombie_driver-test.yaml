@@ -12,3 +12,5 @@ servers:
   driver_location:
     address: "localhost"
     port: "8083"
+amqpServerUrl: "amqp://guest:guest@localhost:5672/"
+configEventBus: "springCloudBus"

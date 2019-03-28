@@ -21,3 +21,6 @@ servers:
   gateway:
     address: ""
     port: "8081"
+amqpServerUrl: "amqp://guest:guest@rabbitmq:5672/"
+configEventBus: "springCloudBus"
+

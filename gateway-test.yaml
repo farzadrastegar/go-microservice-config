@@ -21,3 +21,6 @@ servers:
   gateway:
     address: "localhost"
     port: "8081"
+amqpServerUrl: "amqp://guest:guest@localhost:5672/"
+configEventBus: "springCloudBus"
+
